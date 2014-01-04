@@ -1,7 +1,5 @@
-KeyboradNotification
-====================
 
-# Keyboard sho/hide notification Cordova Plugin 
+# Keyboard show/hide notification Cordova Plugin 
 
 This plugin send a method call to javascript from objective c when keyboard will show/hide.
 
