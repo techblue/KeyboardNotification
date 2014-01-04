@@ -4,12 +4,12 @@ var argscheck = require('cordova/argscheck'),
     utils = require('cordova/utils'),
     exec = require('cordova/exec');
    
-var Keyboard = function() {
+var KeyboardNotify = function() {
 };
 
-Keyboard.notify = function() {
+KeyboardNotify.notify = function() {
     exec(null, null, "KeyboardNotification", "notify", []);
 };
 
-module.exports = Keyboard;
+module.exports = KeyboardNotify;
 });
