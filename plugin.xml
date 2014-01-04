@@ -16,6 +16,7 @@
     </engines>
 
     <js-module src="www/keyboard_notification.js" name="KeyboardNotification">
+          <clobbers target="window.Keyboard" />
     </js-module>
 
     <platform name="ios">
