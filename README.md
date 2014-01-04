@@ -14,4 +14,5 @@ Assuming you're running Cordova 2.9+ and using the command line interface
 In your javascript do as follows - 
 
 var keyboard = cordova.require('cordova/plugin/keyboard_notification');
+
 keyboard.notify();
