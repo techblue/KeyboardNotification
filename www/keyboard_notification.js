@@ -1,15 +1,20 @@
-cordova.define("com.techblue.cordova.plugin.keyboard_notification", function(require, exports, module) {
+/*global cordova*/
+'use strict';
 
-var argscheck = require('cordova/argscheck'),
-    utils = require('cordova/utils'),
-    exec = require('cordova/exec');
-   
-var KeyboardNotify = function() {
+var exec = cordova.require('cordova/exec'),
+    win = function (success) {
+        // do nothing, succeed quietly
+    };
+
+function notify() {
+
+    var fail = function (error) {
+        console.log("Error notifying keybord show/hide" + error);
+    };
+
+    exec(win, fail, "KeyboardNotification", "notify", []);
+}
+
+module.exports = {
+    notify: notify
 };
-
-KeyboardNotify.notify = function() {
-    exec(null, null, "KeyboardNotification", "notify", []);
-};
-
-module.exports = KeyboardNotify;
-});
