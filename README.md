@@ -16,3 +16,10 @@ In your javascript do as follows -
 var keyboard = cordova.require('com.techblue.cordova.plugin.keyboard_notification.KeyboardNotification');
 
 keyboard.notify();
+
+Also create a method named 'resizePageOnKeypadDownManually' in js file and place the code you want to be executed when you get the notification, like -
+
+var resizePageOnKeypadDownManually = function(){
+
+ console.log('Successfully called from objective-c.');
+}
