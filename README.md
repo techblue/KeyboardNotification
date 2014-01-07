@@ -9,6 +9,11 @@ Assuming you're running Cordova 2.9+ and using the command line interface
     $ cd /path/to/project
     $ cordova plugin add https://github.com/iamneerj/KeyboradNotification
     
+If you're using plugman to install the plugins then use -
+
+    $ cd /path/to/project/platform/<ios/android>/
+    $ plugman install --platform ios --project /path/to/project/platform/<ios/android>/ --plugin     https://github.com/iamneerj/KeyboradNotification.git
+    
 # Usage
 
 In your javascript do as follows - 
@@ -19,7 +24,8 @@ keyboard.notify();
 
 Also create a method named 'resizePageOnKeypadDownManually' in js file and place the code you want to be executed when you get the notification, like -
 
-var resizePageOnKeypadDownManually = function(){
+var resizePageOnKeypadDownManually = function() {
 
  console.log('Successfully called from objective-c.');
+ 
 }
